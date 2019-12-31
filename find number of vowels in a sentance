@@ -1,1 +1,12 @@
+sentence = input("enter sentence: ")
+string = sentence.lower() # we are converting string into lower case
 
+print(string)
+
+i = 0          # here we took "i" as a variable and initialize to "0"  because it will contain number of vowels
+list = ["a","e","i","o","u"] # we already converted into lower case ,no need to take upper case letters
+for char in string: # this for loop goes through each character in sentence
+    if char in list: # this if condition will check whether the character is in list if yes then it will increment the "i"
+        i=i+1
+
+print("number of variables in given sentence: ",i)
